@@ -12,3 +12,10 @@ Ejecutar:
 2. `npm install`
 3. `npm start`
 
+# Capturas de pantalla
+
+Leyendo un archivo `markdown`
+![leyendo_un_archivo](./docs/images/leyendo_un_archivo.PNG)
+
+Leyendo un directorio con archivos `markdown`
+![leyendo_un_directorio](./docs/images/leyendo_un_directorio.PNG)

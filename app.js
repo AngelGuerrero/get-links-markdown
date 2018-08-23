@@ -95,9 +95,9 @@ function main(path, options) {
               linkArray.push({
                 file: file,
                 href: result.link,
-                // text: result.text, //Undefined
                 status: result.statusCode,
                 ok: result.status === 'alive'
+                // text: result.text, //Undefined
               });
               counter++;
             } else {
@@ -125,6 +125,8 @@ function main(path, options) {
         console.log(`Evaluando enlace: ${link}`);
 
         linkCheck(link, (err, result) => {
+
+          console.log(`${JSON.stringify(result)}`);
 
           // Exit of function linkCheck if error occurs
           if (err) return reject(err);
