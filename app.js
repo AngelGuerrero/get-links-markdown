@@ -3,17 +3,24 @@ const path = require('path');
 const linkCheck = require('link-check');
 const markdownLinkExtractor = require('markdown-link-extractor');
 
+
 /**
  * Function for extract links from a file
  * 
  * @param {string} path Absolute file path for extract links
  */
-var extractLinks = function (path) {
+function extractLinks(path) {
   const markdown = fs.readFileSync(path).toString();
 
   return markdownLinkExtractor(markdown);
-};
+}
 
+
+/**
+ * Walk through a dir for get all files
+ * 
+ * @param {string} dir Directory where gets all files
+ */
 function walk(dir) {
   var results = [];
   var list = fs.readdirSync(dir);
@@ -38,7 +45,14 @@ function walk(dir) {
   return results;
 }
 
-var main = function (path, options) {
+
+/**
+ * Main function that search links inside a files with extension .md
+ * 
+ * @param {string} path Path or file that search the links
+ * @param {object} options Multiple options for validate the process
+ */
+function main(path, options) {
   // Store the links
   let linkArray = [];
 
@@ -140,8 +154,7 @@ var main = function (path, options) {
 
   });
 
-};
-
+}
 
 
 main('public/', {
