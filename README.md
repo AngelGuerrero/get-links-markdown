@@ -1,5 +1,3 @@
-# Este es un archivo con enlaces
+# Ejercicio para obtener enlaces
 
-![google.com](http://www.google.com)
-
-![hotmail.com](https://www.hotmail.com)
+Este es un ejercicio que me pidieron ayuda, en `javascript` para obtener los enlaces de los archivos de tipo markdown.
