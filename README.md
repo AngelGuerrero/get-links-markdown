@@ -1,6 +1,6 @@
 # Ejercicio para obtener enlaces
 
-Este es un ejercicio que me pidieron ayuda, en `javascript` para obtener los enlaces de los archivos de tipo markdown.
+Este para obtener los enlaces de los archivos de tipo markdown y comprender el funcionamiento de las promesas en Javascript.
 
 # Uso
 
